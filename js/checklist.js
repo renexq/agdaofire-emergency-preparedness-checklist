@@ -30,9 +30,7 @@ function displayTasks() {
     let html = "";
 
     for (let i = 0; i < tasks.length; i++) {
-        // a checkbox is added before the text so the item
-        // can be marked as done 
-        // class="..." attributes below are only there for the site's
+
     
         let checkedAttr = tasks[i].done ? "checked" : "";
 
