@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checklist - Agdao Fire & Emergency Preparedness Checklist</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    
+    <header>
+
+        <h2><a href="index.html">Agdao Fire & Emergency Preparedness Checklist</a></h2>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="preparedness.html">Preparedness</a>
+            <a href="checklist.html" class="active">Checklist</a>
+        </nav>
+
+    </header>
+
+    
+    <main>
+
+        <section id="checklist" class="checklist-container">
+
+            <h2>Emergency Checklist</h2>
+            <p>Complete the checklist to see how prepared your household is for a fire or emergency. Your readiness score updates automatically as you check each item.</p>
+
+            
+            <form id="checklistForm" onsubmit="return false;">
+
+                <ul id="list" class="checklist-list">
+                    <!-- checklist items are rendered here by js/checklist.js -->
+                </ul>
+
+                <div class="add-item">
+                    <label for="task" class="sr-only">Add your own checklist item</label>
+                    <input type="text" id="task" placeholder="Add your own checklist item">
+                    <button type="button" onclick="addTask()">Add</button>
+                    <button type="button" onclick="clearAll()">Clear All</button>
+                </div>
+
+            </form>
+
+            <div class="progress-wrap">
+                <p id="pctLabel">0%</p>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="barFill"></div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    
+    <footer>
+
+        <p>© 2026 Agdao Fire & Emergency Preparedness Checklist</p>
+        <p>In an active emergency, call the Bureau of Fire Protection immediately.</p>
+
+    </footer>
+
+    <script src="js/checklist.js"></script>
+
+</body>
+</html>

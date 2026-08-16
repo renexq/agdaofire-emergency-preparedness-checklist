@@ -1,0 +1,29 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#EFE2CC"/>
+
+  <!-- bottle cap -->
+  <rect x="138" y="35" width="24" height="14" rx="2" fill="#8C1D18"/>
+  <rect x="132" y="49" width="36" height="12" rx="3" fill="#8C1D18"/>
+
+  <!-- bottle neck -->
+  <path d="M140 61 L160 61 L166 85 L134 85 Z" fill="#8C1D18" opacity="0.85"/>
+
+  <!-- bottle body -->
+  <path d="M134 85
+           C 118 100, 116 120, 118 150
+           C 119 165, 130 172, 150 172
+           C 170 172, 181 165, 182 150
+           C 184 120, 182 100, 166 85 Z"
+        fill="#8C1D18" opacity="0.85"/>
+
+  <!-- water fill -->
+  <path d="M120 130
+           C 119 140, 119 148, 120 150
+           C 121 163, 131 168, 150 168
+           C 169 168, 179 163, 180 150
+           C 181 148, 181 140, 180 130 Z"
+        fill="#7FB6C9"/>
+
+  <!-- label -->
+  <rect x="122" y="110" width="56" height="24" rx="3" fill="#FFF6EA"/>
+</svg>

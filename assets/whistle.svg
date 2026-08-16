@@ -1,0 +1,21 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#EFE2CC"/>
+
+  <!-- lanyard -->
+  <path d="M120 60 C 100 75, 100 95, 118 105" fill="none" stroke="#8C1D18" stroke-width="6" stroke-linecap="round"/>
+
+  <!-- whistle body -->
+  <rect x="118" y="95" width="80" height="42" rx="18" fill="#D7263D"/>
+  <circle cx="198" cy="116" r="21" fill="#A11627"/>
+
+  <!-- mouthpiece -->
+  <rect x="96" y="104" width="26" height="24" rx="8" fill="#A11627"/>
+
+  <!-- sound holes -->
+  <circle cx="198" cy="116" r="8" fill="#2B2118"/>
+  <circle cx="150" cy="116" r="4" fill="#fff" opacity="0.6"/>
+
+  <!-- sound waves -->
+  <path d="M215 100 C 225 108, 225 124, 215 132" fill="none" stroke="#2B2118" stroke-width="4" stroke-linecap="round"/>
+  <path d="M228 92 C 244 104, 244 128, 228 140" fill="none" stroke="#2B2118" stroke-width="4" stroke-linecap="round"/>
+</svg>

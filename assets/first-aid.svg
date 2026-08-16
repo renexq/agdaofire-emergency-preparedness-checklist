@@ -1,0 +1,16 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#EFE2CC"/>
+
+  <!-- handle -->
+  <rect x="130" y="55" width="40" height="18" rx="6" fill="none" stroke="#2B2118" stroke-width="6"/>
+
+  <!-- kit body -->
+  <rect x="90" y="72" width="120" height="88" rx="10" fill="#fff" stroke="#2B2118" stroke-width="4"/>
+
+  <!-- cross -->
+  <rect x="138" y="94" width="24" height="44" fill="#D7263D"/>
+  <rect x="128" y="104" width="44" height="24" fill="#D7263D"/>
+
+  <!-- latch -->
+  <rect x="140" y="72" width="20" height="10" fill="#2B2118"/>
+</svg>

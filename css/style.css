@@ -1,0 +1,464 @@
+
+/* Reset & Base Styles */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    height:100%;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:#FFF6EA;
+    color:#2B2118;
+
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+}
+
+/* Navigation Styles */
+header{
+    background:#2B2118;
+    padding:20px 40px;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    position:sticky;
+    top:0;
+}
+
+header a{
+    text-decoration:none;
+    color:#fff;
+}
+
+header h2{
+    font-size:22px;
+    line-height:1.3;
+}
+
+nav a{
+    text-decoration:none;
+    color:#ddd;
+    margin-left:20px;
+    font-weight:bold;
+}
+
+nav a:hover{
+    color:#D7263D;
+}
+
+nav a.active{
+    color:#D7263D;
+}
+
+/* Main Layout */
+main{
+    padding:60px;
+    max-width:1200px;
+    margin:auto;
+}
+
+/* Hero Section (Home Page) */
+.sec1-display{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    gap:50px;
+}
+
+.hero-content{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.hero-content h1{
+    font-size:44px;
+    font-weight:bold;
+    color:#2B2118;
+}
+
+.hero-content span{
+    color:#D7263D;
+}
+
+.hero-content p{
+    font-size:18px;
+    color:#6E6357;
+    line-height:1.8;
+}
+
+.hero-content button{
+    background:#D7263D;
+    color:white;
+    border:none;
+    padding:14px 30px;
+    border-radius:20px;
+    font-size:16px;
+    font-weight:bold;
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:0 4px 10px rgba(0,0,0,.2);
+}
+
+.hero-content button:hover{
+    background:#A11627;
+    transform:translateY(-3px);
+}
+
+.hero-img img{
+    width:100%;
+    max-width:480px;
+    height:auto;
+
+    border-radius:15px;
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+    transition:.3s;
+}
+
+.hero-img img:hover{
+    transform:scale(1.03);
+}
+
+/* Causes Section (Home Page) */
+.sec2-display{
+    padding-top:70px;
+}
+
+.sec2-display h2{
+    font-size:32px;
+    margin-bottom:25px;
+    color:#2B2118;
+}
+
+.cause-container{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+.cause-card{
+    background:#fff;
+    padding:25px 30px;
+    border-radius:12px;
+    border-left:5px solid #D7263D;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.cause-card h3{
+    font-size:20px;
+    color:#8C1D18;
+    margin-bottom:10px;
+}
+
+.cause-card p{
+    color:#6E6357;
+    line-height:1.6;
+}
+
+/* Preparedness Cards (Preparedness Page) */
+.card-container{
+    display:grid;
+    grid-template-columns:repeat(3, 1fr);
+    gap:30px;
+}
+
+.card{
+    background:#fff;
+    padding:20px;
+    border-radius:12px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.1);
+
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:150px;
+    object-fit:cover;
+    border-radius:10px;
+    margin-bottom:20px;
+    background:#EFE2CC;
+}
+
+.card span.tag{
+    display:inline-block;
+    background:#D7263D;
+    color:#fff;
+    font-size:11px;
+    font-weight:bold;
+    padding:4px 10px;
+    border-radius:20px;
+    margin-bottom:10px;
+}
+
+.card h3{
+    font-size:20px;
+    color:#2B2118;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:#6E6357;
+    line-height:1.4;
+}
+
+/* Checklist Section (Checklist Page) */
+.checklist-container{
+    max-width:600px;
+    margin:auto;
+}
+
+.checklist-container h2{
+    font-size:32px;
+    text-align:center;
+    margin-bottom:10px;
+}
+
+.checklist-container > p{
+    text-align:center;
+    color:#6E6357;
+    margin-bottom:35px;
+}
+
+.checklist-list{
+    list-style:none;
+}
+
+.sr-only{
+    position:absolute;
+    width:1px;
+    height:1px;
+    overflow:hidden;
+    clip:rect(0,0,0,0);
+    white-space:nowrap;
+}
+
+.checklist-item{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    background:#fff;
+    padding:16px 20px;
+    border-radius:10px;
+    margin-bottom:12px;
+    box-shadow:0 3px 10px rgba(0,0,0,.06);
+}
+
+.checklist-item input[type="checkbox"]{
+    width:22px;
+    height:22px;
+    accent-color:#D7263D;
+    cursor:pointer;
+}
+
+.checklist-item label{
+    font-size:16px;
+    cursor:pointer;
+    flex:1;
+}
+
+.remove-btn{
+    background:none;
+    border:none;
+    color:#6E6357;
+    font-size:22px;
+    line-height:1;
+    cursor:pointer;
+    padding:6px 10px;
+    border-radius:6px;
+    transition:.2s;
+}
+
+.remove-btn:hover{
+    background:#D7263D;
+    color:#fff;
+}
+
+.add-item{
+    display:flex;
+    gap:10px;
+    margin-bottom:20px;
+}
+
+.add-item input[type="text"]{
+    flex:1;
+    padding:14px 16px;
+    border-radius:10px;
+    border:1px solid #ddd0bc;
+    font-size:15px;
+    font-family:inherit;
+    background:#fff;
+    color:#2B2118;
+}
+
+.add-item input[type="text"]:focus{
+    outline:none;
+    border-color:#D7263D;
+}
+
+.add-item button{
+    background:#D7263D;
+    color:#fff;
+    border:none;
+    padding:0 26px;
+    border-radius:10px;
+    font-size:15px;
+    font-weight:bold;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.add-item button:hover{
+    background:#A11627;
+}
+
+.progress-wrap{
+    margin-top:30px;
+}
+
+.progress-wrap p{
+    text-align:center;
+    font-size:28px;
+    font-weight:bold;
+    color:#D7263D;
+    margin-bottom:10px;
+}
+
+.progress-bar{
+    background:#EFE2CC;
+    border-radius:20px;
+    height:22px;
+    overflow:hidden;
+}
+
+.progress-fill{
+    background:#D7263D;
+    height:100%;
+    width:0%;
+    transition:.3s;
+}
+
+/* Footer Styles */
+footer{
+    margin-top:auto;
+    padding:25px;
+
+    background:#2B2118;
+    color:#EFE2CC;
+
+    text-align:center;
+}
+
+/* Responsive Settings */
+@media (max-width:900px){
+    .card-container{
+        grid-template-columns:repeat(2, 1fr);
+    }
+}
+
+@media (max-width:800px){
+    .sec1-display{
+        flex-direction:column;
+    }
+
+    main{
+        padding:30px;
+    }
+
+    .hero-content h1{
+        font-size:36px;
+    }
+
+    .sec2-display h2{
+        font-size:28px;
+    }
+
+    .checklist-container h2{
+        font-size:28px;
+    }
+}
+
+@media (max-width:600px){
+    .card-container{
+        grid-template-columns:1fr;
+    }
+}
+
+@media (max-width:480px){
+    main{
+        padding:16px;
+    }
+
+    header{
+        flex-direction:column;
+        gap:8px;
+        padding:12px 20px;
+    }
+
+    header h2{
+        font-size:clamp(11px, 4.2vw, 18px);
+        white-space:nowrap;
+    }
+
+    .hero-content h1{
+        font-size:28px;
+    }
+
+    .sec2-display h2{
+        font-size:24px;
+    }
+
+    .checklist-container h2{
+        font-size:24px;
+    }
+
+    nav{
+        font-size:14px;
+    }
+
+    nav a{
+        margin-left:12px;
+    }
+
+    .checklist-item{
+        padding:12px 14px;
+    }
+
+    .remove-btn{
+        font-size:26px;
+        padding:8px 12px;
+    }
+
+    .add-item{
+        flex-wrap:wrap;
+    }
+
+    .add-item input[type="text"]{
+        flex:1 1 100%;
+    }
+
+    .add-item button{
+        flex:1;
+        padding:12px 0;
+    }
+
+    .hero-content button{
+        width:100%;
+    }
+}

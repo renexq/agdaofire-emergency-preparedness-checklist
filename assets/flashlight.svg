@@ -1,0 +1,20 @@
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="300" height="200" fill="#EFE2CC"/>
+
+  <!-- light beam -->
+  <path d="M200 100 L290 60 L290 140 Z" fill="#D7263D" opacity="0.35"/>
+
+  <!-- flashlight body -->
+  <rect x="70" y="82" width="110" height="36" rx="6" fill="#2B2118"/>
+  <rect x="180" y="76" width="24" height="48" rx="4" fill="#2B2118"/>
+  <circle cx="205" cy="100" r="26" fill="#2B2118"/>
+  <circle cx="205" cy="100" r="17" fill="#D7263D"/>
+
+  <!-- grip lines -->
+  <rect x="85" y="90" width="4" height="20" fill="#EFE2CC"/>
+  <rect x="97" y="90" width="4" height="20" fill="#EFE2CC"/>
+  <rect x="109" y="90" width="4" height="20" fill="#EFE2CC"/>
+
+  <!-- switch -->
+  <rect x="130" y="72" width="14" height="10" rx="2" fill="#D7263D"/>
+</svg>
